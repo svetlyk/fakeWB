@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name='viewport' content="width=device-width, initial-scale=1">
+		<title>int.clotze</title>
+		<link rel="stylesheet" type="text/css" href="css/stile.css">
+		<link rel="stylesheet" type="text/css" href="css/itc-slider.css">
+		<link rel="stylesheet" type="text/css" href="css/accordion.css">
+		
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<nav class="nav">
+					<img  class="logo" src="img/логотип.jpg">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="" class="nav__link">Главная</a>
+						</li>
+						<li class="nav__item">
+							<a href="" class="nav__link">Товары</a>
+						</li>
+						<li class="nav__item">
+							<a href="" class="nav__link">Корзина</a>
+						</li>
+						<li class="nav__item">
+							<a href="" class="nav__link">Личный кабинет</a>
+						</li>
+
+
+					</ul>
+					<div class="burger" onclick="burgerClick()">
+						<div class="burger__line burger__line1"></div>
+						<div class="burger__line burger__line2"></div>
+						<div class="burger__line burger__line3"></div>
+					</div>
+				</nav>
+				<button class="btn_menu" id="btn-menu">Меню</button>
+				<div class="header__menu" id="menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							 <a href="" class="menu__link">вход</a>
+						</li>
+						<li class="menu__item">
+							 <a href=""class="menu__link">корзина</a>
+						 </li>
+						<li class="menu__item">
+							 <a href=""class="menu__link"> мои покупки</a>
+						</li>
+						<li class="menu__item">
+							 <a href=""class="menu__link">настройки</a>
+						</li>
+						<li class="menu__item">
+							 <a href=""class="menu__link">личный кабинет</a>
+						</li>
+						<li class="menu__item">
+							 <div class="theme">
+							 	<h4 class="theme__title">Темы</h4>
+							 	<ul class="theme__list">
+							 		<li class="theme__item">
+							 			<div class="theme__light" onclick="lightTheme()">	</div>
+							 		</li>
+							 		<li class="theme__item">
+							 			<div class="theme__dark" onclick="darkTheme()"> 	</div>
+							 		</li>
+
+
+
+							 	</ul>
+							 </div>
+						</li>
+					</ul>
+				 </div>
+			</div>
+		</header>
+		<main>
+			<section class="shop">
+				<div class="container">
+					<h1 class="shop__title">int.clotze</h1>
+					<div class="itc-slider" data-slider="itc-slider" data-swipe="true">
+						<div class="itc-slider-wrapper">
+							<div class="itc-slider-items">
+								<div class="itc-slider-item">
+									<img class="shop__img"src="img/вб2.jpg">	
+								</div>
+								<div class="itc-slider-item">
+									<img class="shop__img"src="img/вб3.jpg">
+								</div>
+								<div class="itc-slider-item">
+									<img class="shop__img"src="img/вбшка.jpg">
+								</div>
+							</div>
+						</div>
+						<button class="itc-slider-btn itc-slider-btn-prev"></button>
+						<button class="itc-slider-btn itc-slider-btn-next"></button>
+					</div>
+					<!-- <img class="shop__img"src="img/вбшка.jpg"> -->
+					<div class="accordion" id='accordion-1'>
+						<div class="itc-accordion-item">
+							<h4 class="itc-accordion-header">описание</h4>
+							<div class="itc-accordion-body">
+								<p class="shop__text">самый популярный интернет магазин в россии(описание своровали у вб)</p>s
+							</div>
+						</div>
+						<div class="itc-accordion-item">
+							<h4 class="itc-accordion-header">лонгслив пушистый</h4>
+							<div class="itc-accordion-body">
+								<h5 class="shop__title">цена 11руб</h5>
+								<button class="shop__btn" id="btn" onclick="buy()">КУПИТЬ!!!</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>	
+		</main>
+		<footer class="footer">
+			<div class="container container_footer">
+				<p class="footer-text">svetlyk</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d761.080784994122!2d92.77541857122235!3d55.98758001999223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5cd7b37b9a054275%3A0x6622a32c3a9de423!2z0J3QvtCy0YvQuSDQkNC60LDQtNC10LzQs9C-0YDQvtC00L7Qug!5e0!3m2!1sru!2sru!4v1714738905947!5m2!1sru!2sru" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</footer>
+			<script type="text/javascript" src="js/button.js"></script>
+			<script type="text/javascript" src="js/itc-slider.js"></script>
+			<script type="text/javascript" src="js/menu.js"></script>
+			<script type="text/javascript" src="js/accordion.js"></script>
+			<script type="text/javascript" src="js/theme.js"></script>
+			<script type="text/javascript" src="js/burger.js"></script>
+	</body>
+</html>
